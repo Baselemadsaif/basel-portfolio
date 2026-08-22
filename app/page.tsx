@@ -220,6 +220,20 @@ export default function Home() {
             <span>Start a conversation</span><strong>↗</strong>
           </a>
         </div>
+        <div className="contact-details" aria-label="Contact details">
+          <a href="mailto:baselemadsaif@gmail.com">
+            <span>Email</span>
+            <strong>baselemadsaif@gmail.com</strong>
+          </a>
+          <a href="tel:+962778621178">
+            <span>Phone</span>
+            <strong>+962 778621178</strong>
+          </a>
+          <a href="https://www.linkedin.com/in/basel-al-saif-162b951b9/" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            <strong>Connect ↗</strong>
+          </a>
+        </div>
         <div className="footer-line">
           <strong className="footer-name">BASEL AL-SAIF</strong>
           <p>© 2026 · AMMAN, JORDAN</p>
