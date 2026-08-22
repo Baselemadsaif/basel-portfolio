@@ -6,7 +6,7 @@ const stats = [
 
 const experience = [
   {
-    period: "2024 — PRESENT",
+    period: "2024 TO PRESENT",
     role: "Operations & Project Specialist",
     company: "Independent · Amman, Jordan",
     detail:
@@ -14,7 +14,7 @@ const experience = [
     skills: ["Project planning", "Problem solving", "Stakeholder support"],
   },
   {
-    period: "2022 — 2024",
+    period: "2022 TO 2024",
     role: "Team & Client Support",
     company: "Cross-functional environment",
     detail:
@@ -86,7 +86,7 @@ export default function Home() {
         <div className="eyebrow"><span /> PORTFOLIO · 2026</div>
         <h1>I turn knowledge<br />into <em>impact.</em></h1>
         <p className="hero-copy">
-          I&apos;m Basel — a curious professional focused on thoughtful work,
+          I&apos;m Basel, a curious professional focused on thoughtful work,
           continuous learning, and results that speak clearly.
         </p>
         <div className="hero-actions">
@@ -111,7 +111,7 @@ export default function Home() {
           <h2 id="statement-title">Curiosity is my starting point.<br /><span>Useful work is the goal.</span></h2>
           <p>
             I bring structure to complexity and momentum to good ideas. My work sits at the intersection
-            of people, process, and continuous learning — with every project treated as a chance to make
+            of people, process, and continuous learning. Every project is a chance to make
             something clearer, stronger, and more useful.
           </p>
         </div>
@@ -121,7 +121,7 @@ export default function Home() {
         <div className="section-shell">
           <div className="section-heading">
             <div>
-              <p className="section-kicker">/ 01 — EXPERIENCE</p>
+              <p className="section-kicker">/ 01 EXPERIENCE</p>
               <h2 id="experience-title">Where I&apos;ve made<br /><span>things happen.</span></h2>
             </div>
             <p className="section-intro">A career built through responsibility, collaboration, and the habit of leaving systems better than I found them.</p>
@@ -150,10 +150,10 @@ export default function Home() {
       <section className="certificates-section section-shell" id="certificates" aria-labelledby="certificates-title">
         <div className="section-heading">
           <div>
-            <p className="section-kicker">/ 02 — CERTIFICATES</p>
+            <p className="section-kicker">/ 02 CERTIFICATES</p>
             <h2 id="certificates-title">Proof of<br /><span>progress.</span></h2>
           </div>
-          <p className="section-intro">Learning that moves beyond theory — selected credentials that support the way I think, collaborate, and deliver.</p>
+          <p className="section-intro">Learning that moves beyond theory. These selected credentials support the way I think, collaborate, and deliver.</p>
         </div>
         <div className="certificate-grid">
           {certificates.map((certificate) => (
@@ -177,7 +177,7 @@ export default function Home() {
         <div className="section-shell">
           <div className="section-heading light-heading">
             <div>
-              <p className="section-kicker">/ 03 — KNOWLEDGE</p>
+              <p className="section-kicker">/ 03 KNOWLEDGE</p>
               <h2 id="knowledge-title">What I bring<br />to the table.</h2>
             </div>
             <p className="section-intro">A practical blend of structured thinking, digital confidence, and human-centered communication.</p>

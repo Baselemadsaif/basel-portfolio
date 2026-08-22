@@ -6,7 +6,7 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Basel — Portfolio",
+  title: "Basel | Portfolio",
   description: "Selected experience, certificates, and knowledge from Basel's professional journey.",
 };
 
