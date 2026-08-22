@@ -47,10 +47,10 @@ const certificates = [
   },
   {
     number: "04",
-    year: "2024",
-    title: "Git and GitHub by Google",
-    issuer: "Coursera coursework",
-    detail: "Version control, remote repositories, collaboration, and project workflows.",
+    year: "KODEKLOUD",
+    title: "Docker Certified Associate",
+    issuer: "KodeKloud certification",
+    detail: "Docker administration, images, networking, storage, orchestration, and container security.",
   },
 ];
 
