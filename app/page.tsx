@@ -1,6 +1,6 @@
 const stats = [
   { value: "02", label: "Years of experience" },
-  { value: "02", label: "Google Cloud certifications" },
+  { value: "02", label: "Professional certifications" },
   { value: "14+", label: "DevOps technologies" },
 ];
 
@@ -121,7 +121,7 @@ export default function Home() {
           <p>
             My background combines enterprise IT support, identity and access management, Linux systems,
             and practical DevOps engineering. I hold a BSc in Computer Science from the University of Jordan
-            and two Google Cloud certifications.
+            and two professional certifications in cloud engineering and security.
           </p>
         </div>
       </section>
