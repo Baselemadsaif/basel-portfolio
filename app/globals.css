@@ -65,9 +65,42 @@ a { color: inherit; text-decoration: none; }
   right: 4%;
   top: 24%;
 }
+.hero-portrait {
+  position: absolute;
+  z-index: 0;
+  inset: 86px 0 0 auto;
+  width: min(49vw, 700px);
+  height: calc(100% - 86px);
+  margin: 0;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 28%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 28%, #000 100%);
+}
+.hero-portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(5,7,13,.06) 45%, rgba(5,7,13,.84) 100%),
+    linear-gradient(90deg, rgba(17,49,165,.28), rgba(3,10,36,.12));
+}
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 63% center;
+  filter: saturate(.82) contrast(1.08) brightness(.78);
+  transform: scale(1.025);
+}
+.eyebrow,
+.hero h1,
+.hero-copy,
+.hero-actions,
+.stats { position: relative; z-index: 2; }
 .eyebrow { font-size: 11px; font-weight: 800; letter-spacing: .22em; color: #aab7ee; display: flex; align-items: center; gap: 12px; }
 .eyebrow span { width: 28px; height: 2px; background: #6e87ff; }
-h1 { font-size: clamp(64px, 8.2vw, 126px); line-height: .88; letter-spacing: -.075em; margin: 34px 0 32px; max-width: 1000px; position: relative; z-index: 1; }
+h1 { font-size: clamp(64px, 7.6vw, 116px); line-height: .88; letter-spacing: -.075em; margin: 34px 0 32px; max-width: 940px; position: relative; z-index: 1; }
 h1 em { color: #5a77ff; font-style: normal; }
 .hero-copy { max-width: 515px; color: #b7bfd8; line-height: 1.75; font-size: 17px; margin: 0 0 38px; }
 .hero-actions { display: flex; align-items: center; gap: 34px; }
@@ -85,7 +118,21 @@ h1 em { color: #5a77ff; font-style: normal; }
 @media (max-width: 760px) {
   .nav-shell { width: calc(100% - 36px); grid-template-columns: 1fr 1fr; }
   .nav-links { display: none; }
-  .hero { padding: 145px 18px 42px; }
+  .hero { padding: 145px 18px 42px; min-height: 930px; }
+  .hero-portrait {
+    inset: 86px 0 auto;
+    width: 100%;
+    height: 510px;
+    opacity: .52;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 45%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 45%, transparent 100%);
+  }
+  .hero-portrait::after {
+    background:
+      linear-gradient(90deg, rgba(5,7,13,.76), rgba(5,7,13,.08)),
+      linear-gradient(180deg, rgba(11,28,90,.12), rgba(5,7,13,.96));
+  }
+  .hero-portrait img { object-position: 61% center; }
   h1 { font-size: clamp(58px, 18vw, 82px); }
   .hero-copy { font-size: 15px; }
   .stats { flex-wrap: wrap; gap: 24px; }

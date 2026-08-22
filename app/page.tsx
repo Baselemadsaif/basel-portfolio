@@ -1,5 +1,5 @@
 const stats = [
-  { value: "04+", label: "Years of growth" },
+  { value: "02", label: "Years of experience" },
   { value: "12", label: "Certificates earned" },
   { value: "08", label: "Core strengths" },
 ];
@@ -83,10 +83,18 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-glow" aria-hidden="true" />
-        <div className="eyebrow"><span /> PORTFOLIO · 2026</div>
+        <figure className="hero-portrait">
+          <img
+            src="/basel-al-saif.jpg"
+            alt="Basel Al-Saif wearing a dark suit"
+            width="1304"
+            height="1254"
+          />
+        </figure>
+        <div className="eyebrow"><span /> BASEL AL-SAIF · PORTFOLIO</div>
         <h1>I turn knowledge<br />into <em>impact.</em></h1>
         <p className="hero-copy">
-          I&apos;m Basel, a curious professional focused on thoughtful work,
+          I&apos;m Basel Al-Saif, a curious professional focused on thoughtful work,
           continuous learning, and results that speak clearly.
         </p>
         <div className="hero-actions">
