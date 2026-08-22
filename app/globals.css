@@ -31,6 +31,25 @@ a { color: inherit; text-decoration: none; }
   inset: 0 0 auto;
 }
 .monogram { font-size: 26px; font-weight: 900; letter-spacing: -2px; }
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid rgba(255,255,255,.78);
+  box-shadow: 0 0 0 5px rgba(55,88,235,.18);
+  background: #dce1ea;
+}
+.profile-avatar img {
+  position: absolute;
+  width: 210%;
+  height: 210%;
+  max-width: none;
+  left: -82%;
+  top: -17%;
+  object-fit: cover;
+}
 .nav-links { display: flex; gap: 34px; color: #c4cae3; font-size: 13px; }
 .nav-links a:hover { color: white; }
 .nav-cta { justify-self: end; font-size: 13px; font-weight: 700; }
@@ -65,34 +84,6 @@ a { color: inherit; text-decoration: none; }
   right: 4%;
   top: 24%;
 }
-.hero-portrait {
-  position: absolute;
-  z-index: 0;
-  inset: 86px 0 0 auto;
-  width: min(49vw, 700px);
-  height: calc(100% - 86px);
-  margin: 0;
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 28%, #000 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, #000 28%, #000 100%);
-}
-.hero-portrait::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba(5,7,13,.06) 45%, rgba(5,7,13,.84) 100%),
-    linear-gradient(90deg, rgba(17,49,165,.28), rgba(3,10,36,.12));
-}
-.hero-portrait img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 63% center;
-  filter: saturate(.82) contrast(1.08) brightness(.78);
-  transform: scale(1.025);
-}
 .eyebrow,
 .hero h1,
 .hero-copy,
@@ -118,21 +109,7 @@ h1 em { color: #5a77ff; font-style: normal; }
 @media (max-width: 760px) {
   .nav-shell { width: calc(100% - 36px); grid-template-columns: 1fr 1fr; }
   .nav-links { display: none; }
-  .hero { padding: 145px 18px 42px; min-height: 930px; }
-  .hero-portrait {
-    inset: 86px 0 auto;
-    width: 100%;
-    height: 510px;
-    opacity: .52;
-    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 45%, transparent 100%);
-    mask-image: linear-gradient(180deg, #000 0%, #000 45%, transparent 100%);
-  }
-  .hero-portrait::after {
-    background:
-      linear-gradient(90deg, rgba(5,7,13,.76), rgba(5,7,13,.08)),
-      linear-gradient(180deg, rgba(11,28,90,.12), rgba(5,7,13,.96));
-  }
-  .hero-portrait img { object-position: 61% center; }
+  .hero { padding: 145px 18px 42px; }
   h1 { font-size: clamp(58px, 18vw, 82px); }
   .hero-copy { font-size: 15px; }
   .stats { flex-wrap: wrap; gap: 24px; }
@@ -239,14 +216,12 @@ main { background: #f5f6fa; }
   text-transform: uppercase;
   letter-spacing: .08em;
 }
-.edit-note { margin: 22px 0 0; color: #5f6678; font-size: 10px; letter-spacing: .08em; }
-
 .certificates-section {
   padding-block: 130px 145px;
   color: #0b0e18;
 }
 .certificates-section .section-intro { color: #6f7483; }
-.certificate-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.certificate-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .certificate-card {
   background: white;
   min-height: 460px;
@@ -288,7 +263,7 @@ main { background: #f5f6fa; }
 .issuer { color: var(--blue); margin: 0 0 11px; }
 .certificate-card h3 { max-width: 280px; }
 .certificate-detail { color: #777d8d; font-size: 12px; line-height: 1.7; margin: 17px 0 28px; }
-.certificate-card a {
+.certificate-source {
   margin-top: auto;
   padding-top: 18px;
   border-top: 1px solid #e5e7ed;
@@ -297,7 +272,7 @@ main { background: #f5f6fa; }
   letter-spacing: .12em;
   font-weight: 900;
 }
-.certificate-card a span { color: var(--blue); float: right; font-size: 14px; }
+.certificate-source span { color: var(--blue); float: right; font-size: 14px; }
 
 .knowledge-section {
   position: relative;
@@ -384,6 +359,7 @@ main { background: #f5f6fa; }
 .footer-line div { font-size: 9px; letter-spacing: .14em; color: #717786; }
 .footer-line p { text-align: center; }
 .footer-line div { text-align: right; }
+.footer-name { font-size: 11px; letter-spacing: .12em; }
 
 a:focus-visible {
   outline: 2px solid #8ea2ff;

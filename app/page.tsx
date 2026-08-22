@@ -1,70 +1,77 @@
 const stats = [
   { value: "02", label: "Years of experience" },
-  { value: "12", label: "Certificates earned" },
-  { value: "08", label: "Core strengths" },
+  { value: "02", label: "Google Cloud certifications" },
+  { value: "14+", label: "DevOps technologies" },
 ];
 
 const experience = [
   {
-    period: "2024 TO PRESENT",
-    role: "Operations & Project Specialist",
-    company: "Independent · Amman, Jordan",
+    period: "JUNE 2025 TO PRESENT",
+    role: "DevOps / AIOps",
+    company: "Optimum Partners · Amman, Jordan",
     detail:
-      "Turning evolving ideas into organized plans, aligning people and priorities, and moving work from intention to delivery.",
-    skills: ["Project planning", "Problem solving", "Stakeholder support"],
+      "Building and securing automated infrastructure across Linux and Google Cloud, with hands-on delivery using containers, infrastructure as code, CI/CD, and secrets management.",
+    skills: ["Linux hardening", "Docker", "Terraform & Ansible", "GCP", "GitHub Actions"],
   },
   {
-    period: "2022 TO 2024",
-    role: "Team & Client Support",
-    company: "Cross-functional environment",
+    period: "AUGUST 2024 TO PRESENT",
+    role: "HelpDesk Engineer & Administrator",
+    company: "Optimum Partners · Amman, Jordan",
     detail:
-      "Supported day-to-day delivery with calm communication, structured follow-through, and a strong eye for what people need next.",
-    skills: ["Communication", "Documentation", "Coordination"],
+      "Managing identity and access through Okta, resolving technical and access issues, supporting user lifecycles, and enforcing secure authentication policies including MFA.",
+    skills: ["Okta SSO", "Identity & access", "Technical support", "MFA", "User provisioning"],
   },
 ];
 
 const certificates = [
   {
     number: "01",
-    year: "2026",
-    title: "Project Management Foundations",
-    issuer: "Professional development",
-    detail: "Planning, prioritization, risk awareness, and dependable project delivery.",
+    year: "GOOGLE CLOUD",
+    title: "Associate Cloud Engineer",
+    issuer: "Professional certification",
+    detail: "Deploying, securing, and operating solutions on Google Cloud Platform.",
   },
   {
     number: "02",
-    year: "2025",
-    title: "Data & Digital Literacy",
-    issuer: "Continuing education",
-    detail: "Using digital tools and evidence to make clearer, faster decisions.",
+    year: "GOOGLE CLOUD",
+    title: "Professional Cloud Security Engineer",
+    issuer: "Professional certification",
+    detail: "Designing and implementing secure workloads and infrastructure on Google Cloud.",
   },
   {
     number: "03",
-    year: "2025",
-    title: "Effective Communication",
-    issuer: "Professional development",
-    detail: "Clear writing, thoughtful collaboration, and audience-aware presentation.",
+    year: "KODEKLOUD",
+    title: "DevOps Engineering Learning Path",
+    issuer: "Hands-on professional development",
+    detail: "Practical DevOps skills developed through structured labs and engineering exercises.",
+  },
+  {
+    number: "04",
+    year: "2024",
+    title: "Git and GitHub by Google",
+    issuer: "Coursera coursework",
+    detail: "Version control, remote repositories, collaboration, and project workflows.",
   },
 ];
 
 const knowledge = [
   {
     number: "01",
-    title: "Project thinking",
-    copy: "I break ambitious outcomes into practical steps, visible priorities, and achievable milestones.",
-    topics: ["Planning", "Prioritization", "Delivery"],
+    title: "Cloud & infrastructure",
+    copy: "I provision and secure cloud and Linux environments with repeatable infrastructure as code and reliable network configuration.",
+    topics: ["Google Cloud", "Terraform", "Ansible", "Nginx"],
   },
   {
     number: "02",
-    title: "Digital fluency",
-    copy: "I learn tools quickly and use technology to simplify work, organize information, and reveal insights.",
-    topics: ["Research", "Digital tools", "Data literacy"],
+    title: "Containers & delivery",
+    copy: "I build containerized services and delivery workflows that move code through testing, analysis, releases, and deployment.",
+    topics: ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "SonarQube"],
   },
   {
     number: "03",
-    title: "People & communication",
-    copy: "I listen carefully, write clearly, and help different perspectives move toward shared understanding.",
-    topics: ["Collaboration", "Writing", "Presentation"],
+    title: "Systems & security",
+    copy: "I combine Linux administration with identity, endpoint, and secrets-management practices to keep systems dependable and access controlled.",
+    topics: ["Linux", "Okta SSO", "IAM", "Vault", "CrowdStrike"],
   },
 ];
 
@@ -72,30 +79,24 @@ export default function Home() {
   return (
     <main>
       <nav className="nav-shell" aria-label="Primary navigation">
-        <a className="monogram" href="#top" aria-label="Basel home">B.</a>
+        <a className="profile-avatar" href="#top" aria-label="Basel Al-Saif home">
+          <img src="/basel-al-saif.jpg" alt="" width="1304" height="1254" />
+        </a>
         <div className="nav-links">
           <a href="#experience">Experience</a>
           <a href="#certificates">Certificates</a>
           <a href="#knowledge">Knowledge</a>
         </div>
-        <a className="nav-cta" href="mailto:hello@example.com">Let&apos;s talk <span>↗</span></a>
+        <a className="nav-cta" href="mailto:baselemadsaif@gmail.com">Let&apos;s talk <span>↗</span></a>
       </nav>
 
       <section className="hero" id="top">
         <div className="hero-glow" aria-hidden="true" />
-        <figure className="hero-portrait">
-          <img
-            src="/basel-al-saif.jpg"
-            alt="Basel Al-Saif wearing a dark suit"
-            width="1304"
-            height="1254"
-          />
-        </figure>
-        <div className="eyebrow"><span /> BASEL AL-SAIF · PORTFOLIO</div>
-        <h1>I turn knowledge<br />into <em>impact.</em></h1>
+        <div className="eyebrow"><span /> BASEL AL-SAIF · DEVOPS ENGINEER</div>
+        <h1>Reliable systems.<br /><em>Automated.</em></h1>
         <p className="hero-copy">
-          I&apos;m Basel Al-Saif, a curious professional focused on thoughtful work,
-          continuous learning, and results that speak clearly.
+          I&apos;m a Junior DevOps Engineer building secure, automated, and scalable systems
+          across cloud infrastructure, CI/CD, containerization, and Linux.
         </p>
         <div className="hero-actions">
           <a className="button-primary" href="#experience">Explore my work <span>↓</span></a>
@@ -116,11 +117,11 @@ export default function Home() {
       <section className="statement section-shell" aria-labelledby="statement-title">
         <p className="section-kicker">/ A QUICK INTRODUCTION</p>
         <div>
-          <h2 id="statement-title">Curiosity is my starting point.<br /><span>Useful work is the goal.</span></h2>
+          <h2 id="statement-title">From support to<br /><span>secure automation.</span></h2>
           <p>
-            I bring structure to complexity and momentum to good ideas. My work sits at the intersection
-            of people, process, and continuous learning. Every project is a chance to make
-            something clearer, stronger, and more useful.
+            My background combines enterprise IT support, identity and access management, Linux systems,
+            and practical DevOps engineering. I hold a BSc in Computer Science from the University of Jordan
+            and two Google Cloud certifications.
           </p>
         </div>
       </section>
@@ -132,7 +133,7 @@ export default function Home() {
               <p className="section-kicker">/ 01 EXPERIENCE</p>
               <h2 id="experience-title">Where I&apos;ve made<br /><span>things happen.</span></h2>
             </div>
-            <p className="section-intro">A career built through responsibility, collaboration, and the habit of leaving systems better than I found them.</p>
+            <p className="section-intro">Hands-on experience securing infrastructure, automating delivery, managing access, and supporting reliable day-to-day technology operations.</p>
           </div>
           <div className="experience-list">
             {experience.map((item) => (
@@ -151,7 +152,6 @@ export default function Home() {
               </article>
             ))}
           </div>
-          <p className="edit-note">This portfolio is ready for your exact roles, dates, and achievements.</p>
         </div>
       </section>
 
@@ -161,7 +161,7 @@ export default function Home() {
             <p className="section-kicker">/ 02 CERTIFICATES</p>
             <h2 id="certificates-title">Proof of<br /><span>progress.</span></h2>
           </div>
-          <p className="section-intro">Learning that moves beyond theory. These selected credentials support the way I think, collaborate, and deliver.</p>
+          <p className="section-intro">Cloud credentials and practical coursework supporting my work across infrastructure, security, automation, and software delivery.</p>
         </div>
         <div className="certificate-grid">
           {certificates.map((certificate) => (
@@ -174,7 +174,7 @@ export default function Home() {
               <p className="issuer">{certificate.issuer}</p>
               <h3>{certificate.title}</h3>
               <p className="certificate-detail">{certificate.detail}</p>
-              <a href="#contact" aria-label={`Add credential for ${certificate.title}`}>Add credential <span>↗</span></a>
+              <div className="certificate-source">Listed on résumé <span>✓</span></div>
             </article>
           ))}
         </div>
@@ -188,7 +188,7 @@ export default function Home() {
               <p className="section-kicker">/ 03 KNOWLEDGE</p>
               <h2 id="knowledge-title">What I bring<br />to the table.</h2>
             </div>
-            <p className="section-intro">A practical blend of structured thinking, digital confidence, and human-centered communication.</p>
+            <p className="section-intro">A practical toolkit covering cloud platforms, containers, automation, delivery pipelines, Linux administration, and access security.</p>
           </div>
           <div className="knowledge-grid">
             {knowledge.map((item) => (
@@ -209,14 +209,14 @@ export default function Home() {
         <p className="section-kicker">/ LET&apos;S CONNECT</p>
         <div className="contact-main">
           <h2>Have a good idea?<br /><span>Let&apos;s give it momentum.</span></h2>
-          <a className="contact-button" href="mailto:hello@example.com">
+          <a className="contact-button" href="mailto:baselemadsaif@gmail.com">
             <span>Start a conversation</span><strong>↗</strong>
           </a>
         </div>
         <div className="footer-line">
-          <a className="monogram" href="#top">B.</a>
-          <p>© 2026 BASEL · AMMAN, JORDAN</p>
-          <div><a href="#top">Back to top ↑</a></div>
+          <strong className="footer-name">BASEL AL-SAIF</strong>
+          <p>© 2026 · AMMAN, JORDAN</p>
+          <div><a href="https://www.linkedin.com/in/basel-al-saif-162b951b9/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
         </div>
       </footer>
     </main>

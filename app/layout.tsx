@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.includes("localhost") ? "http" : "https");
   const socialImage = `${protocol}://${host}/og.png`;
   const title = "Basel Al-Saif | Portfolio";
-  const description = "Selected experience, certificates, and knowledge from Basel Al-Saif's professional journey.";
+  const description = "Junior DevOps Engineer focused on cloud infrastructure, automation, CI/CD, containerization, Linux, and security.";
 
   return {
     title,
