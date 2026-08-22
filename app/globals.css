@@ -139,6 +139,7 @@ main { background: #f5f6fa; }
   background: #0b0f18;
   color: #f7f8ff;
 }
+.experience-section .section-heading { grid-template-columns: 1fr; }
 .section-heading {
   display: grid;
   grid-template-columns: 1.2fr .8fr;

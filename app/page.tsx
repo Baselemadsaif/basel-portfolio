@@ -131,7 +131,6 @@ export default function Home() {
               <p className="section-kicker">EXPERIENCE</p>
               <h2 id="experience-title">Professional experience.</h2>
             </div>
-            <p className="section-intro">Hands-on experience securing infrastructure, automating delivery, managing access, and supporting reliable day-to-day technology operations.</p>
           </div>
           <div className="experience-list">
             {experience.map((item) => (
