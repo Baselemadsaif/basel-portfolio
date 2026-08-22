@@ -91,15 +91,31 @@ export default function Home() {
       </nav>
 
       <section className="hero" id="top">
-        <div className="eyebrow">BASEL AL-SAIF · DEVOPS ENGINEER</div>
-        <h1>DevOps engineering for<br /><em>reliable systems.</em></h1>
-        <p className="hero-copy">
-          I&apos;m a Junior DevOps Engineer building secure, automated, and scalable systems
-          across cloud infrastructure, CI/CD, containerization, and Linux.
-        </p>
-        <div className="hero-actions">
-          <a className="button-primary" href="#experience">Explore my work <span>↓</span></a>
-          <a className="text-link" href="#certificates">View certificates <span>↗</span></a>
+        <div className="hero-grid">
+          <div className="hero-primary">
+            <div className="eyebrow">BASEL AL-SAIF · DEVOPS ENGINEER</div>
+            <h1>DevOps engineering for<br /><em>reliable systems.</em></h1>
+            <p className="hero-copy">
+              I&apos;m a Junior DevOps Engineer building secure, automated, and scalable systems
+              across cloud infrastructure, CI/CD, containerization, and Linux.
+            </p>
+            <div className="hero-actions">
+              <a className="button-primary" href="#experience">Explore my work <span>↓</span></a>
+              <a className="text-link" href="#certificates">View certificates <span>↗</span></a>
+            </div>
+          </div>
+          <aside className="hero-about" aria-labelledby="hero-about-title">
+            <p className="hero-about-label" id="hero-about-title">ABOUT ME</p>
+            <p>
+              My background combines enterprise IT support, identity and access management,
+              Linux systems, and practical DevOps engineering.
+            </p>
+            <div className="hero-about-detail">
+              <span>Education</span>
+              <strong>BSc in Computer Science</strong>
+              <small>University of Jordan</small>
+            </div>
+          </aside>
         </div>
 
         <div className="stats" aria-label="Career highlights">
@@ -109,18 +125,6 @@ export default function Home() {
               <span>{stat.label}</span>
             </div>
           ))}
-        </div>
-      </section>
-
-      <section className="statement section-shell" aria-labelledby="statement-title">
-        <p className="section-kicker">ABOUT ME</p>
-        <div>
-          <h2 id="statement-title">Cloud infrastructure, automation, and security.</h2>
-          <p>
-            My background combines enterprise IT support, identity and access management, Linux systems,
-            and practical DevOps engineering. I hold a BSc in Computer Science from the University of Jordan
-            and two professional certifications in cloud engineering and security.
-          </p>
         </div>
       </section>
 
@@ -158,7 +162,6 @@ export default function Home() {
             <p className="section-kicker">CERTIFICATIONS</p>
             <h2 id="certificates-title">Certifications and training.</h2>
           </div>
-          <p className="section-intro">Cloud credentials and practical coursework supporting my work across infrastructure, security, automation, and software delivery.</p>
         </div>
         <div className="certificate-grid">
           {certificates.map((certificate) => (
@@ -190,7 +193,6 @@ export default function Home() {
               <p className="section-kicker">TECHNICAL SKILLS</p>
               <h2 id="knowledge-title">Tools and technologies.</h2>
             </div>
-            <p className="section-intro">A practical toolkit covering cloud platforms, containers, automation, delivery pipelines, Linux administration, and access security.</p>
           </div>
           <div className="knowledge-grid">
             {knowledge.map((item) => (
