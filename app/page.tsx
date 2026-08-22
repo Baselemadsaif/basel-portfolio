@@ -92,7 +92,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-glow" aria-hidden="true" />
-        <div className="eyebrow"><span /> BASEL AL-SAIF · DEVOPS ENGINEER</div>
+        <div className="eyebrow">BASEL AL-SAIF · DEVOPS ENGINEER</div>
         <h1>Reliable systems.<br /><em>Automated.</em></h1>
         <p className="hero-copy">
           I&apos;m a Junior DevOps Engineer building secure, automated, and scalable systems
@@ -115,7 +115,7 @@ export default function Home() {
       </section>
 
       <section className="statement section-shell" aria-labelledby="statement-title">
-        <p className="section-kicker">/ A QUICK INTRODUCTION</p>
+        <p className="section-kicker">A QUICK INTRODUCTION</p>
         <div>
           <h2 id="statement-title">From support to<br /><span>secure automation.</span></h2>
           <p>
@@ -130,7 +130,7 @@ export default function Home() {
         <div className="section-shell">
           <div className="section-heading">
             <div>
-              <p className="section-kicker">/ 01 EXPERIENCE</p>
+              <p className="section-kicker">01 EXPERIENCE</p>
               <h2 id="experience-title">Where I&apos;ve made<br /><span>things happen.</span></h2>
             </div>
             <p className="section-intro">Hands-on experience securing infrastructure, automating delivery, managing access, and supporting reliable day-to-day technology operations.</p>
@@ -158,7 +158,7 @@ export default function Home() {
       <section className="certificates-section section-shell" id="certificates" aria-labelledby="certificates-title">
         <div className="section-heading">
           <div>
-            <p className="section-kicker">/ 02 CERTIFICATES</p>
+            <p className="section-kicker">02 CERTIFICATES</p>
             <h2 id="certificates-title">Proof of<br /><span>progress.</span></h2>
           </div>
           <p className="section-intro">Cloud credentials and practical coursework supporting my work across infrastructure, security, automation, and software delivery.</p>
@@ -185,7 +185,7 @@ export default function Home() {
         <div className="section-shell">
           <div className="section-heading light-heading">
             <div>
-              <p className="section-kicker">/ 03 KNOWLEDGE</p>
+              <p className="section-kicker">03 KNOWLEDGE</p>
               <h2 id="knowledge-title">What I bring<br />to the table.</h2>
             </div>
             <p className="section-intro">A practical toolkit covering cloud platforms, containers, automation, delivery pipelines, Linux administration, and access security.</p>
@@ -206,7 +206,7 @@ export default function Home() {
       </section>
 
       <footer className="contact-section section-shell" id="contact">
-        <p className="section-kicker">/ LET&apos;S CONNECT</p>
+        <p className="section-kicker">LET&apos;S CONNECT</p>
         <div className="contact-main">
           <h2>Have a good idea?<br /><span>Let&apos;s give it momentum.</span></h2>
           <a className="contact-button" href="mailto:baselemadsaif@gmail.com">

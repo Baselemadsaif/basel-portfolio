@@ -90,7 +90,6 @@ a { color: inherit; text-decoration: none; }
 .hero-actions,
 .stats { position: relative; z-index: 2; }
 .eyebrow { font-size: 11px; font-weight: 800; letter-spacing: .22em; color: #aab7ee; display: flex; align-items: center; gap: 12px; }
-.eyebrow span { width: 28px; height: 2px; background: #6e87ff; }
 h1 { font-size: clamp(64px, 7.6vw, 116px); line-height: .88; letter-spacing: -.075em; margin: 34px 0 32px; max-width: 940px; position: relative; z-index: 1; }
 h1 em { color: #5a77ff; font-style: normal; }
 .hero-copy { max-width: 515px; color: #b7bfd8; line-height: 1.75; font-size: 17px; margin: 0 0 38px; }
