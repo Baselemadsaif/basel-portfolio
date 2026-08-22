@@ -1,6 +1,6 @@
 const stats = [
-  { value: "02", label: "Years of experience" },
-  { value: "02", label: "Professional certifications" },
+  { value: "2", label: "Years of experience" },
+  { value: "2", label: "Professional certifications" },
   { value: "14+", label: "DevOps technologies" },
 ];
 
@@ -91,9 +91,8 @@ export default function Home() {
       </nav>
 
       <section className="hero" id="top">
-        <div className="hero-glow" aria-hidden="true" />
         <div className="eyebrow">BASEL AL-SAIF · DEVOPS ENGINEER</div>
-        <h1>Reliable systems.<br /><em>Automated.</em></h1>
+        <h1>DevOps engineering for<br /><em>reliable systems.</em></h1>
         <p className="hero-copy">
           I&apos;m a Junior DevOps Engineer building secure, automated, and scalable systems
           across cloud infrastructure, CI/CD, containerization, and Linux.
@@ -111,13 +110,12 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="vertical-note">BASED IN AMMAN · AVAILABLE WORLDWIDE</div>
       </section>
 
       <section className="statement section-shell" aria-labelledby="statement-title">
-        <p className="section-kicker">A QUICK INTRODUCTION</p>
+        <p className="section-kicker">ABOUT ME</p>
         <div>
-          <h2 id="statement-title">From support to<br /><span>secure automation.</span></h2>
+          <h2 id="statement-title">Cloud infrastructure, automation, and security.</h2>
           <p>
             My background combines enterprise IT support, identity and access management, Linux systems,
             and practical DevOps engineering. I hold a BSc in Computer Science from the University of Jordan
@@ -130,8 +128,8 @@ export default function Home() {
         <div className="section-shell">
           <div className="section-heading">
             <div>
-              <p className="section-kicker">01 EXPERIENCE</p>
-              <h2 id="experience-title">Where I&apos;ve made<br /><span>things happen.</span></h2>
+              <p className="section-kicker">EXPERIENCE</p>
+              <h2 id="experience-title">Professional experience.</h2>
             </div>
             <p className="section-intro">Hands-on experience securing infrastructure, automating delivery, managing access, and supporting reliable day-to-day technology operations.</p>
           </div>
@@ -158,8 +156,8 @@ export default function Home() {
       <section className="certificates-section section-shell" id="certificates" aria-labelledby="certificates-title">
         <div className="section-heading">
           <div>
-            <p className="section-kicker">02 CERTIFICATES</p>
-            <h2 id="certificates-title">Proof of<br /><span>progress.</span></h2>
+            <p className="section-kicker">CERTIFICATIONS</p>
+            <h2 id="certificates-title">Certifications and training.</h2>
           </div>
           <p className="section-intro">Cloud credentials and practical coursework supporting my work across infrastructure, security, automation, and software delivery.</p>
         </div>
@@ -170,7 +168,6 @@ export default function Home() {
                 <span>{certificate.number}</span>
                 <span>{certificate.year}</span>
               </div>
-              <div className="certificate-mark" aria-hidden="true">✓</div>
               <p className="issuer">{certificate.issuer}</p>
               <h3>{certificate.title}</h3>
               <p className="certificate-detail">{certificate.detail}</p>
@@ -188,19 +185,17 @@ export default function Home() {
       </section>
 
       <section className="knowledge-section" id="knowledge" aria-labelledby="knowledge-title">
-        <div className="knowledge-orbit" aria-hidden="true" />
         <div className="section-shell">
           <div className="section-heading light-heading">
             <div>
-              <p className="section-kicker">03 KNOWLEDGE</p>
-              <h2 id="knowledge-title">What I bring<br />to the table.</h2>
+              <p className="section-kicker">TECHNICAL SKILLS</p>
+              <h2 id="knowledge-title">Tools and technologies.</h2>
             </div>
             <p className="section-intro">A practical toolkit covering cloud platforms, containers, automation, delivery pipelines, Linux administration, and access security.</p>
           </div>
           <div className="knowledge-grid">
             {knowledge.map((item) => (
               <article className="knowledge-card" key={item.number}>
-                <span className="knowledge-number">{item.number}</span>
                 <h3>{item.title}</h3>
                 <p>{item.copy}</p>
                 <div className="tag-list blue-tags">
@@ -213,11 +208,11 @@ export default function Home() {
       </section>
 
       <footer className="contact-section section-shell" id="contact">
-        <p className="section-kicker">LET&apos;S CONNECT</p>
+        <p className="section-kicker">CONTACT</p>
         <div className="contact-main">
-          <h2>Have a good idea?<br /><span>Let&apos;s give it momentum.</span></h2>
+          <h2>Get in touch.</h2>
           <a className="contact-button" href="mailto:baselemadsaif@gmail.com">
-            <span>Start a conversation</span><strong>↗</strong>
+            <span>Send an email</span><strong>↗</strong>
           </a>
         </div>
         <div className="contact-details" aria-label="Contact details">
