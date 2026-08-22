@@ -174,7 +174,14 @@ export default function Home() {
               <p className="issuer">{certificate.issuer}</p>
               <h3>{certificate.title}</h3>
               <p className="certificate-detail">{certificate.detail}</p>
-              <div className="certificate-source">Listed on résumé <span>✓</span></div>
+              <a
+                className="certificate-source"
+                href="https://www.linkedin.com/in/basel-al-saif-162b951b9/details/certifications/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View on LinkedIn <span>↗</span>
+              </a>
             </article>
           ))}
         </div>
