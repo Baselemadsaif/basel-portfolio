@@ -30,7 +30,7 @@ Secrets:
 Run the following in Google Cloud Shell after replacing the first two values. The GitHub repository must use the exact `owner/repository` form, including capitalization.
 
 ```bash
-export PROJECT_ID="defense-in-depth-lab"
+export PROJECT_ID="portfolio-507202"
 export GITHUB_REPOSITORY="Baselemadsaif/basel-portfolio"
 
 export PROJECT_NUMBER="$(gcloud projects describe "$PROJECT_ID" --format='value(projectNumber)')"
