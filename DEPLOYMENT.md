@@ -48,7 +48,9 @@ gcloud iam service-accounts create "$DEPLOYER_NAME" \
   --project="$PROJECT_ID" \
   --display-name="GitHub Cloud Run deployer"
 
-gcloud projects add-iam-policy-binding "$PROJECT_ID" \
+gcloud run services add-iam-policy-binding basel-portfolio \
+  --project="$PROJECT_ID" \
+  --region="me-central1" \
   --member="serviceAccount:${DEPLOYER_EMAIL}" \
   --role="roles/run.developer"
 
