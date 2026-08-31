@@ -6,5 +6,6 @@
 dist
 node_modules
 npm-debug.log*
+gha-creds-*.json
 Dockerfile*
 README.md
