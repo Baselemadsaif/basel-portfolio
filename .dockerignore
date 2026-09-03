@@ -1,4 +1,5 @@
 .git
+.github
 .gitignore
 .next
 .vinext
@@ -9,3 +10,6 @@ npm-debug.log*
 gha-creds-*.json
 Dockerfile*
 README.md
+DEPLOYMENT.md
+tests
+.env*
