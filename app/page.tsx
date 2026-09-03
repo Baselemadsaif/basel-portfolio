@@ -1,3 +1,5 @@
+import { ProfileAvatar } from "./profile-avatar";
+
 const stats = [
   { value: "2", label: "Years of experience" },
   { value: "2", label: "Professional certifications" },
@@ -79,9 +81,7 @@ export default function Home() {
   return (
     <main>
       <nav className="nav-shell" aria-label="Primary navigation">
-        <a className="profile-avatar" href="#top" aria-label="Basel Al-Saif home">
-          <img src="/basel-al-saif.jpg" alt="" width="1304" height="1254" />
-        </a>
+        <ProfileAvatar />
         <div className="nav-links">
           <a href="#experience">Experience</a>
           <a href="#certificates">Certificates</a>
